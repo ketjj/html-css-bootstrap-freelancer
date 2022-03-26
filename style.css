@@ -1,65 +1,69 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
+
+a {
+  text-decoration: none;
+  color:black;
 }
 
 /* HEADER */
 
 header{
-  max-width:100%;
-  align-items: center;
-  height: 70px; 
+  min-height: 70px; 
   background-color: blueviolet;
 }
 
+
 .kj_container {
   width: 100%;
-  height: 100%;
+  padding: 0 10px;
   background-color: rgb(198, 147, 247);
 }
+
 .col {
   background-color: rgb(231, 207, 253);
 }
 
+.ham-menu {
+  text-align: right;
+}
+
+.menu-right div {
+  margin-left: 10px;
+  text-transform: uppercase;
+  color:black;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
 /* JUMBOTRON */
 
 
- 
+.jumbotron,
+#article  {
+  background-color: rgb(175, 241, 155);
+}
 .jumbotron {
-  width: 100vw;
-  height: 400px;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(137, 203, 241);
+  min-height: 500px;
+  background-color: #1ABC9C;
 }
-
 .jumbo-content{
-  width: 300px;
-  height: 300px;
-  background-color: brown;
-} 
-
-.main .kj_container{
-  width:83%;
-  margin: 30px auto;
+  width: 380px; 
+  background-color: aquamarine; 
 }
-.col-4 {
-  background-color: blue;
+.jumbo-content .box{
+  width: 70%;
+  min-height: 260px;
+  background-color: rgb(127, 146, 255); 
 }
 
-
-
-
-
-@media all and (max-width: 575px) {
-  .jumbo-content{
-    width: 250px;
-    height: 250px;
-  }
+/* LIBRARY */
+#library {
+  margin: 3% 6%;
+  text-align: center;
 }
-
-
+#library .col {
+  min-height:250px; 
+}
 
 /* DEBUG */
 
@@ -67,6 +71,19 @@ header{
   background-color: rgba(255, 0 , 0, .3);
   border: 1px solid black;
 }
+.debug2 {
+  background-color: rgb(255, 122, 122);
+}
 .dsp-flex{
   display: flex;
+}
+
+@media (max-width: 576px) {
+  #library {
+    margin: 0 1%;
+  }
+
+  #library .col {
+    min-height:300px; 
+  }
 }
