@@ -91,8 +91,22 @@ h1,h2,h3 {
   min-height: 60px;
 }
 
+
 footer {
   background-color: rgb(99, 75, 238);
+}
+
+.icons-web i {
+  display: inline-block;
+  width: 40px;
+  margin: 0 5px 1rem 5px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#information .col-12 {
+  margin: 20px 0;
 }
 
 
