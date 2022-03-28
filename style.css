@@ -16,8 +16,12 @@ header{
   width: 100%;
   padding: 0 10px;
   background-color: rgb(198, 147, 247);
+  margin: 0 auto;
 }
-
+.k-container {
+  width: 60%;
+  margin: 0 auto;
+}
 .col {
   background-color: rgb(231, 207, 253);
 }
@@ -28,14 +32,13 @@ header{
 
 .menu-right div {
   margin-left: 10px;
-  text-transform: uppercase;
   color:black;
 }
 h2,
 h3 {
   font-size: 1.5em;
 }
-h1,h2,h3 {
+h1,h2,h3,.menu-right {
   text-transform: uppercase;
 }
 /* JUMBOTRON */
@@ -63,9 +66,8 @@ h1,h2,h3 {
 #library, 
 #information {
   margin: 3% 6%;
-  text-align: center;
 }
-#library .col {
+.kj-card {
   min-height:250px; 
 }
 
@@ -110,6 +112,15 @@ footer {
 }
 
 
+@media (max-width: 576px) {
+  #library {
+    margin: 0 1%;
+  }
+
+  #library .col {
+    min-height:300px; 
+  }
+}
 
 
 
@@ -135,12 +146,3 @@ footer {
   display: flex;
 }
 
-@media (max-width: 576px) {
-  #library {
-    margin: 0 1%;
-  }
-
-  #library .col {
-    min-height:300px; 
-  }
-}
