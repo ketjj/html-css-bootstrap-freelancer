@@ -47,6 +47,7 @@ header{
 .nav-items a {
   font-weight: 500;
 }
+
 .navbar-brand h2 {
   font-size: 26px;
 }
@@ -66,7 +67,6 @@ JUMBOTRON
 .jumbotron,
 #article  {
   overflow: hidden;
-  color:white;
 }
 .jumbotron {
   min-height: 600px;
@@ -123,7 +123,8 @@ JUMBOTRON
 }
 
 .portfolio-content,
-.article-content {
+.article-content,
+.contact-content {
   max-width:500px;
   margin: 0 auto;
   overflow: hidden;
@@ -161,7 +162,6 @@ CARDS
   font-size: 120px;
   top: 30%;
   right: 37%;
-  color:white;
   margin: 0 auto;
 }
 
@@ -186,46 +186,72 @@ ARTICLE
   border-color: rgba(255, 255, 255, .8);
 }
 
-#article .col{
-  min-height: 50px;
-}
-
-#article.col2 {
-  min-height: 150px;
-}
-
 #contact {
   margin: 3% 6%;
-  background-color: rgb(188, 188, 255);
 }
 
-#contact .col-9 {
-  min-height: 60px;
+/* 
+FORM 
+*/
+.form-control {
+  border:none;
+}
+.k_form {
+ border-bottom: 1px solid #ced4da;
 }
 
+.btn_send{
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+.btn_send:hover{
+  background-color: #006e58;
+  border-color: #006e58;
+}
 
+.btn-success:active {
+  background-color: #2c3e50;
+}
+
+/* FOOTER */
 footer {
-  background-color: rgb(99, 75, 238);
+  background-color: #3a546d;
 }
 
 .icons-web i {
   display: inline-block;
   width: 40px;
-  margin: 0 5px 1rem 5px;
   padding: 10px;
-  border: 1px solid black;
-  border-radius: 50%;
+  margin: 5px 8px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;s
 }
 
-#information .col-12 {
-  margin: 20px 0;
+.icons-web a {
+  font-size: 20px;
 }
+
+#information{
+  padding: 50px 0;
+}
+
+#information h3{
+  font-size: 25px;
+}
+.copyright {
+  background-color: #2c3e50;
+  min-height: 70px;
+}
+
+
+/* MEDIA QUERY */
 
 @media (max-width: 1200px) {
   .line {
     width: 80%;
   }
 }
+
 
 @media (max-width: 992px) {
   .line {
@@ -277,9 +303,6 @@ footer {
 }
 
 
-
-
-
 /* DEBUG */
 
 .debug {
@@ -293,3 +316,6 @@ footer {
   display: flex;
 }
 
+.cl_white {
+  color:white;
+}
