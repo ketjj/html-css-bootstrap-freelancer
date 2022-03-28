@@ -17,119 +17,213 @@
   <header class="d-flex align-items-center">
     <div class="kj_container">
       <div class="container">
-        <div class="row align-items-center">
-
-          <div class="col-10 col-md-6">
-            <h2> <a href="#">Start Bootstap</a></h2>
-          </div>
-
-          <div class="col-2 col-md-6">
-            <div class="row justify-content-end align-items-center">
-
-              <div class="col-6 col-sm-10 col-lg-6">
-                <div class="navv d-none d-sm-block">
-                  <div class="menu-right d-flex justify-content-end">
-                    <div><a href="#">portfolio</a></div>
-                    <div><a href="#">about</a></div>
-                    <div><a href="#">contact</a></div>
-                  </div>
-                </div>
-
-                <div class="ham-menu d-block d-sm-none"><a href="#">X</a></div>
-              </div>
+        <nav class="navbar navbar-expand-md navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bolder" href="#"> <h2>start Bootstrap</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="k_nav d-none d-md-block">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 upper">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#article">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#contact">contact</a>
+                </li>
+              </ul>
             </div>
           </div>
-          </div>
-        </div>
+        </nav>
       </div>
+    </div>
   </header>
-
+              
+        
     <!-- JUMBOTRON -->
 
     <div class="jumbotron d-flex justify-content-center flex-column align-items-center">
       <div class="jumbo-content d-flex flex-column align-items-center">
-        <div class="box">a
-          <img src="#" alt="">
+        <div class="box">
+          <img src="img/avatar.svg" alt="">
         </div>
-        <h1>start bootstrap</h1>
-        <div>x</div>
-        <div>
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
+
+        <div class="star text-center d-flex flex-column align-items-center">
+          <h1>start bootstrap</h1>
+          <div class="star_container">
+            <div class="container-fluid">
+        
+              <div class="row align-items-center justify-content-center">
+                <div class="col-5 d-flex justify-content-end">
+                  <div class="line white"></div>
+                </div>
+  
+                <div class="col-2 star-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg"    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                </div>
+                <div class="col-5">
+                  <div class="line white"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+       <div class="job-des upper">
+         <span>Graphic artist </span>
+         <span class="middle">web designer</span>
+         <span>illustrator</span>
+       </div>
       </div>
     </div>
+    
     <!-- //JUMBOTRON -->
 
-
   <main>
-     <!-- SECTION LIBRARY -->
-    <section id="library">
-      <div class="main-text text-center debug">
-        <div class="library-title">
-          <h1>Portfolio</h1>
-          <div>x</div>
-
+     <!-- SECTION PORTFOLIO -->
+    <section id="portfolio">
+      <div class="portfolio-content">
+        <div class="main-text d-flex">
+          <div class="star text-center d-flex flex-column align-items-center">
+            <h1>Portfolio</h1>
+            <div class="star_container">
+              <div class="container-fluid">
+          
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-5 d-flex justify-content-end">
+                    <div class="line black"></div>
+                  </div>
+    
+                  <div class="col-2 star-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+                  <div class="col-5">
+                    <div class="line black"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
  
-      <div class="library-images">
+      <div class="portfolio-images">
         <div class="container">
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col debug">
-              <div class="kj-card">1</div>
-            </div>
-            <div class="col debug2">
-              <div class="kj-card">2</div>
-            </div>
-            <div class="col debug">
-              <div class="kj-card">3</div>
-            </div>
-              
-            <div class="col debug2">
-              <div class="kj-card">4</div>
-            </div>
-            <div class="col  debug">
-              <div class="kj-card">5</div>
-            </div>
-            <div class="col debug2">
-              <div class="kj-card">6</div>
+            <div class="col">
+              <div class="kj-card">
+                <div class="overlay">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <img src="img/cabin.png" alt="">
+              </div>
             </div>
 
+            <div class="col">
+              <div class="kj-card">
+                <div class="overlay">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <img src="img/cake.png" alt="">
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="kj-card">
+                <div class="overlay">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <img src="img/circus.png" alt="">
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="kj-card">
+                <div class="overlay">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <img src="img/game.png" alt="">
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="kj-card">
+                <div class="overlay">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <img src="img/safe.png" alt="">
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="kj-card">
+                <div class="overlay">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <img src="img/submarine.png" alt="">
+              </div>
+            </div>       
           </div>
         </div>
       </div>
     </section>
-     <!--//SECTION LIBRARY -->
+     <!--//SECTION PORTFOLIO -->
 
      <!-- SECTION ARTICLE -->
     <section id="article">
-       <div class="main-text text-center debug">
-        <div class="library-title">
-          <h1>About</h1>
-          <div>x</div>
-          
+
+      <div class="article-content upper">
+        <div class="star text-center d-flex flex-column align-items-center">
+          <h1>about</h1>
+          <div class="star_container">
+            <div class="container-fluid">
+        
+              <div class="row align-items-center justify-content-center">
+                <div class="col-5 d-flex justify-content-end">
+                  <div class="line white"></div>
+                </div>
+  
+                <div class="col-2 star-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg"    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                  </svg>
+                </div>
+                <div class="col-5">
+                  <div class="line white"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-       </div>
-       <div class="k-container">
+      </div>
+
+      <div class="k-container">
          <div class="container-fluid">
            <div class="row row-cols-1 row-cols-md-2">
-             <div class="col debug">
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae fuga obcaecati quod nihil voluptatibus, accusamus possimus voluptates? Doloribus labore itaque nam quis iste quos, inventore ea autem cum nobis!</p>
+             <div class="col fs-5">
+                 <p>Freelancer is a free boorstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and Javascript as well optional LESS stylesheets for easy customization. </p>
                </div>
-               <div class="col debug">
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa dolorem ullam maxime nulla accusamus, aspernatur dignissimos mollitia magnam error explicabo laboriosam minima asperiores numquam, voluptatibus porro ipsum beatae praesentium.</p>
+               <div class="col fs-5">
+                 <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                </div>
              </div>
           </div>
         </div>
 
-        <div class="main-text debug2 text-center">
-          <div><a href="#">
-            <i></i>
-            <span>Download</span>
-          </a></div>
+        <div class="text-center mt-5">
+          <button type="button" class="btn btn-outline-secondary btn-lg btn_download">
+            <i class="fa-solid fa-download"></i>
+            Download
+         </button>
+        
+          
         </div>
      </section>
      <!-- //SECTION ARTICLE -->

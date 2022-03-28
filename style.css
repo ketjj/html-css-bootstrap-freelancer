@@ -13,9 +13,14 @@ header{
   position: fixed;
   z-index: 999;
   width:100vw;
-  min-height: 70px; 
+  height: 70px; 
   background-color: #2c3e50;
   color: white;
+}
+#portfolio,
+#article,
+#contact {
+  padding-top: 70px;
 }
 
 .kj_container {
@@ -44,8 +49,6 @@ header{
 }
 .navbar-brand h2 {
   font-size: 26px;
-  font-weight: 700;
-
 }
 .bg-light {
   background-color: #2c3e50;
@@ -55,21 +58,23 @@ h1,h2,h3,.menu-right {
   text-transform: uppercase;
   margin-top: 10px;
 }
-/* JUMBOTRON */
 
+/* 
+JUMBOTRON 
+*/
 
 .jumbotron,
 #article  {
-  background-color: rgb(175, 241, 155);
   overflow: hidden;
   color:white;
 }
 .jumbotron {
-  min-height: 650px;
+  min-height: 600px;
   background-color: #1ABC9C;
 }
 .jumbo-content{
   width: 500px; 
+  margin-top:90px;
 }
 .jumbo-content .box{
   width: 250px;
@@ -78,35 +83,107 @@ h1,h2,h3,.menu-right {
 .star {
   width: 100%;
   min-height: 55px;
+  margin-bottom: 15px;
 }
 .star h1{
   font-size: 45px;
 }
 .star_container{
-  width:70%;
+  width:100%;
 }
 .star-icon{
-  width: 47px;
-  height: 30px;
+  width: 52px;
+  height: 40px;
 }
-.line-1{
+.line{
   width:100%;
-  height: 3px;
-  background-color: white;
+  height: 3px; 
   border-radius: 5px;
 }
-/* LIBRARY */
-#library, 
-#information {
-  margin: 3% 6%;
+
+.line.white {
+  background-color: white;
 }
-.kj-card {
-  min-height:250px; 
+.line.black {
+  background-color: black;
+}
+.job-des {
+  font-size: 20px;
+}
+.job-des .middle::after,
+.job-des .middle::before {
+  content: " - ";
 }
 
+
+/* PORTFOLIO */
+
+#portfolio {
+  margin: 3% 6%;
+}
+
+.portfolio-content,
+.article-content {
+  max-width:500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* 
+CARDS 
+*/
+
+.kj-card {
+  position: relative;
+  width:100%;
+  border-radius: 10px;
+  margin-bottom: 2vw;
+  overflow: hidden;
+}
+.kj-card img { 
+  width:100%; 
+}
+.kj-card:hover .overlay{
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease;
+}
+.overlay {
+  position: absolute;
+  width:100%;
+  min-height:300px; 
+  background-color: rgba(26, 188, 156, .6);
+  display: none;
+}
+
+.overlay i{
+  position: absolute;
+  font-size: 120px;
+  top: 30%;
+  right: 37%;
+  color:white;
+  margin: 0 auto;
+}
+
+/* 
+ARTICLE 
+*/
+
 #article {
-  min-height: 200px;
-  padding-top: 30px;
+  min-height: 500px;
+  background-color: #1ABC9C;
+}
+
+.btn_download {
+  color: white;
+  border-color:white;
+  margin-bottom: 20px;
+}
+
+.btn-outline-secondary:hover{
+  color:black;
+  background-color: rgba(255, 255, 255, .8); 
+  border-color: rgba(255, 255, 255, .8);
 }
 
 #article .col{
@@ -144,14 +221,44 @@ footer {
   margin: 20px 0;
 }
 
+@media (max-width: 1200px) {
+  .line {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .line {
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .line {
+    width: 35%;
+  }
+  .kj-card {
+    margin-bottom: 3vw;
+  }
+
+  #article .k-container p {
+    margin-bottom: 30px;
+  }
+
+  .btn_download {
+   
+    margin-bottom: 40px;
+  }
+}
 
 
 @media (max-width: 576px) {
-  #library {
-    margin: 0 1%;
+  #portfolio {
+    margin: 0 auto;
   }
 
-  #library .col {
+  #portfolio .col {
     min-height:300px; 
   }
   .navbar h2 {
@@ -161,20 +268,13 @@ footer {
     font-size: 1em;
     padding: .2rem .5rem;
   }
-  .star_container{
-    width:40%;
+  .line {
+    width: 20%;
   }
-
+  .kj-card {
+    margin-bottom: 4vw;
+  }
 }
-
-
-
-
-
-
-
-
-
 
 
 
