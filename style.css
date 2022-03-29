@@ -241,24 +241,10 @@ footer {
 
 /* MEDIA QUERY */
 
-@media (max-width: 1200px) {
-  .line {
-    width: 80%;
-  }
-}
-
-
-@media (max-width: 992px) {
-  .line {
-    width: 50%;
-  }
-}
 
 
 @media (max-width: 768px) {
-  .line {
-    width: 35%;
-  }
+
   .kj-card {
     margin-bottom: 3vw;
   }
@@ -285,9 +271,6 @@ footer {
   .navbar-toggler {
     font-size: 1em;
     padding: .2rem .5rem;
-  }
-  .line {
-    width: 20%;
   }
   .kj-card {
     margin-bottom: 4vw;
